@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace CustomNPCHitPhrases;
 
-[BepInPlugin("CustomNPCHitPhrases", "Custom NPC Hit Phrases", "1.0.1")]
+[BepInPlugin("CustomNPCHitPhrases", "Custom NPC Hit Phrases", "1.0.2")]
 public class CustomNPCHitPhrases : BaseUnityPlugin
 {
     private bool Visible = true;
