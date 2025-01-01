@@ -6,7 +6,7 @@ using UnityEngine;
 using Object = UnityEngine.Object;
 using Random = System.Random;
 
-namespace NPCHitPhrases.Patches
+namespace CustomNPCHitPhrases.Patches
 {
     [HarmonyPatch(typeof(NPC_Info))]
     public class NPC_InfoPatches
@@ -17,7 +17,7 @@ namespace NPCHitPhrases.Patches
         public static bool UserCode_RPCNotificationAboveHead__String__String(NPC_Info __instance, string message1, string messageAddon)
         {
             if (!message1.Contains("NPCmessagehit")) return true;
-            string Messages = NPCHitPhrases.NotificationMessages.Value;
+            string Messages = CustomNPCHitPhrases.NotificationMessages.Value;
             if (string.IsNullOrEmpty(Messages)) return true;
             NotificationMessages = Messages.Split(',').Select(m => m.Trim()).ToList();
             if (NotificationMessages.Any(string.IsNullOrEmpty)) return true;

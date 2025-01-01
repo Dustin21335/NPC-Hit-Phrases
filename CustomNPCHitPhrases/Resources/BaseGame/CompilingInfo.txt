@@ -1,0 +1,6 @@
+If you want to compile this you need Supermarkets dependencies 
+
+Press Win + R and paste
+%ProgramFiles(x86)%\Steam\steamapps\common\Supermarket Together\Supermarket Together_Data\Managed
+
+Press ctrl + a then ctrl c go to the BaseGame folder and paste them using ctrl + v
